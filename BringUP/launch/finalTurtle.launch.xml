@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="turtlesim" exec="turtlesim_node"/>
+    <node pkg="learn_pkg" exec="SpawnKill">
+        <param name="Target_size" value="5"/>
+    </node>
+    <node pkg="learn_pkg" exec="ControlTurtle"/>
+    
+</launch>
